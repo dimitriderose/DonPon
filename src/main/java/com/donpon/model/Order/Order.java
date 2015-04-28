@@ -14,4 +14,5 @@ public interface Order
 	public String getConfirmationCode();
 	public Coupon getCoupon();
 	public Person getPerson();
+	public Long getId();
 }

@@ -1,14 +1,12 @@
 package com.donpon.model.Company;
 
-import java.util.List;
+import java.util.List; 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.annotation.Fetch;
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.Indexed;
 import org.springframework.data.neo4j.annotation.NodeEntity;
 import org.springframework.data.neo4j.annotation.RelatedTo;
-import org.springframework.stereotype.Component;
 
 import com.donpon.model.Coupon.Coupon;
 
