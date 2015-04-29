@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.NodeEntity;
-import org.springframework.stereotype.Component;
+
 
 @NodeEntity
 public class CouponImpl implements Coupon {

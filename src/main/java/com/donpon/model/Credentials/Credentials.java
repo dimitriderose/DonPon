@@ -16,5 +16,7 @@ public interface Credentials
 	public String getPassword();
 	
 	public Person getPerson();
+
+	public Long getId();
 	
 }

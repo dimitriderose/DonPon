@@ -1,44 +1,83 @@
 package com.donpon.model.Person;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.*; 
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
+/**
+* Testing Person class to make sure the Person DAO is working as expected
+* 
+* @author Dimitri De Rose
+*
+*/
+//TODO Need to update this class to retrieve information from database
 public class PersonImplTest {
+	
+	private Person person;
+
+	@Before
+	public void setUp() {
+		person= new PersonImpl();
+	}
+	
+	@After
+	public void releaseResources(){
+		person= null;
+	}
 
 	@Test
 	public void testSetFirstName() {
-		fail("Not yet implemented");
+		StringBuilder firstName= new StringBuilder("Sherry");
+		person.setFirstName(firstName.toString());
+		
+		assertEquals(firstName.toString(), person.getFirstName());
 	}
 
 	@Test
 	public void testSetLastName() {
-		fail("Not yet implemented");
+		StringBuilder lastName= new StringBuilder("Tate");
+		person.setLastName(lastName.toString());
+		
+		assertEquals(lastName.toString(), person.getLastName());
 	}
 
 	@Test
 	public void testSetEmailAddress() {
-		fail("Not yet implemented");
+		StringBuilder email= new StringBuilder("fun.code@awesome.net");
+		person.setEmailAddress(email.toString());
+		
+		assertEquals(email.toString(), person.getEmailAddress());
 	}
 
 	@Test
 	public void testGetFirstName() {
-		fail("Not yet implemented");
+		StringBuilder firstName= new StringBuilder("Sherry");
+		person.setFirstName(firstName.toString());
+		
+		assertEquals(firstName.toString(), person.getFirstName());
 	}
 
 	@Test
 	public void testGetLastName() {
-		fail("Not yet implemented");
+		StringBuilder lastName= new StringBuilder("Tate");
+		person.setLastName(lastName.toString());
+		
+		assertEquals(lastName.toString(), person.getLastName());
 	}
 
 	@Test
 	public void testGetEmailAddress() {
-		fail("Not yet implemented");
+		StringBuilder email= new StringBuilder("fun.code@awesome.net");
+		person.setEmailAddress(email.toString());
+		
+		assertEquals(email.toString(), person.getEmailAddress());
 	}
 
 	@Test
 	public void testGetId() {
-		fail("Not yet implemented");
+		//TODO create testcase once Graph Database is up and running
 	}
 
 }
